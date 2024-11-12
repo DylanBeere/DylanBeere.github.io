@@ -1,10 +1,26 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 h1 {
-    color: #333;
-    text-align: center;
+    font-size: 2rem; /* Größe passt sich relativ zur Bildschirmgröße an */
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+    /* Beispiel: Bilder responsive machen */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
